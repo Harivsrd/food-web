@@ -8,7 +8,6 @@ const StoreContextProvider = (props) => {
 
     const url = "https://food-del-backend-aw57.onrender.com"
     const [cartItems, setCartItems] = useState({});
-    const url = "http://localhost:4000";
     const [token,setToken] = useState("");
     const [food_list,setFoodList] = useState([]);
 
