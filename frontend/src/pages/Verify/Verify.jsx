@@ -14,7 +14,7 @@ export function Verify() {
     const navigate = useNavigate();
 
     const verifyPayament = async ()=>{
-        const response = await axios.post(url+"/api/order/verify",{success,orderId})
+        const response = await axios.post("https://food-del-backend-aw57.onrender.com"+"/api/order/verify",{success,orderId})
         if(response.data.success){
             navigate("/myorders");
         }
